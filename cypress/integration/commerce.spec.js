@@ -38,8 +38,8 @@ describe("Fluxo de cadastro de usuário do ecommerce", () => {
         cy.get("#years").select("1966");
         cy.get("#newsletter").click();
         cy.get("#optin").click();
-        //cy.get("#firstname").type("José"); => Procurar como apagar o campo do seletor pra não escrever o nome junto com o que já existe
-        //cy.get("#lastname").type("Railson") => Procurar como apagar o campo do seletor pra não escrever o nome junto com o que já existe
+        cy.get("#firstname").clear().type("José"); 
+        cy.get("#lastname").clear().type("Railson");
         cy.get("#company").type("JRTur");
         cy.get("#address1").type("Avenida João Pessoa, 2004");
         cy.get("#address2").type("Ap 402");
@@ -51,7 +51,7 @@ describe("Fluxo de cadastro de usuário do ecommerce", () => {
         cy.get("#phone").type("8311111111");
         cy.get("#phone_mobile").type("83922222222");
         cy.clearLocalStorage("#alias");
-        cy.get("#alias").type("Rua José Américo, nº 1989"); 
+        cy.get("#alias").clear().type("Rua José Américo, nº 1989"); 
         //cy.get("#submitAccount > span").click(); => Procurar como apagar o campo do seletor pra não escrever o nome junto com o que já existe
 
     })
