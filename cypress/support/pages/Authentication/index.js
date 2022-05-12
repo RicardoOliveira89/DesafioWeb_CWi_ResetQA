@@ -2,7 +2,7 @@ const el = require("./elements").ELEMENTS;
 
 class Authentication {
     inserirEmail(){
-        cy.get("#email_create").type("jose.railsontur@mail.com");
+        cy.get("#email_create").type("original234@mail.com");
     }
     clicarNoBotaoCreateAnAccount(){
         cy.get("#SubmitCreate").click();
