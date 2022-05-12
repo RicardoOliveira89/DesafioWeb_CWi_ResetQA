@@ -3,7 +3,7 @@
 import homePage from "../support/pages/Home";
 import authenticationPage from "../support/pages/Authentication";
 import registerPage from "../support/pages/Register";
-import myAccount from "../support/pages/MyAccount";
+import myAccountPage from "../support/pages/MyAccount";
 
 describe("Fluxo de cadastro de usuário do ecommerce", () => {
     it("Acessar o site e realizar cadastro de usuário", () => {
@@ -22,7 +22,7 @@ describe("Fluxo de cadastro de usuário do ecommerce", () => {
       registerPage.reinserirNome();
       registerPage.reinserirSobrenome();
       registerPage.inserirEmpresa();   
-      registerPage.InserirEndereco();
+      registerPage.inserirEndereco();
       registerPage.inserirComplementoEndereco();
       registerPage.inserirCidade();
       registerPage.escolherEstado();
@@ -33,6 +33,7 @@ describe("Fluxo de cadastro de usuário do ecommerce", () => {
       registerPage.inserirCelular();
       registerPage.inserirEnderecoAlternativo();
       registerPage.clicarNoBotaoRegister();
+      myAccountPage.validarMinhaConta();
     })
 
 // 1º Teste

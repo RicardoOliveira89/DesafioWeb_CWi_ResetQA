@@ -31,7 +31,7 @@ class Register {
     reinserirNome(){
         cy.get("#firstname").clear().type("José"); 
     }
-    reinserirSobre(){
+    reinserirSobrenome(){
         cy.get("#lastname").clear().type("Railson");
     }
     inserirEmpresa(){
@@ -67,7 +67,7 @@ class Register {
     inserirEnderecoAlternativo(){
         cy.get("#alias").clear().type("Rua José Américo, nº 1989");
     }
-    clicarnoBotaoRegister(){
+    clicarNoBotaoRegister(){
         cy.get("#submitAccount > span").click();
     }
 }
