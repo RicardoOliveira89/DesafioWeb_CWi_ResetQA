@@ -4,7 +4,7 @@ const el = require("./elements").ELEMENTS;
 
 class Authentication {
     inserirEmail(){
-        cy.get(el.email).type("jrturismo1234@mail.com");
+        cy.get(el.email).type("jrturismo@mail.com");
     }
     clicarNoBotaoCreateAnAccount(){
         cy.get(el.botaoCriar).click();
