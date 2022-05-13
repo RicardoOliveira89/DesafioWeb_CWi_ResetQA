@@ -1,8 +1,10 @@
+/// <reference types ="Cypress"/>
+
 const el = require("./elements").ELEMENTS;
 
 class MyAccount {
     validarMinhaConta(){
-        cy.get(".account > span").should("have.text", "José Railson");
+        cy.get(el.usuarioDaConta).should("have.text", "José Railson");
     }
 }
 

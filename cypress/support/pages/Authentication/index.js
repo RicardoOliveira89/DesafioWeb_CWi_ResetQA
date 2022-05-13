@@ -1,11 +1,13 @@
+/// <reference types ="Cypress"/>
+
 const el = require("./elements").ELEMENTS;
 
 class Authentication {
     inserirEmail(){
-        cy.get("#email_create").type("original234@mail.com");
+        cy.get(el.email).type("jrturismo1234@mail.com");
     }
     clicarNoBotaoCreateAnAccount(){
-        cy.get("#SubmitCreate").click();
+        cy.get(el.botaoCriar).click();
     }
 }
 

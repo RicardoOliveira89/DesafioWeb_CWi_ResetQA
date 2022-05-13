@@ -1,8 +1,10 @@
+/// <reference types ="Cypress"/>
+
 const el = require("./elements").ELEMENTS;
 
 class Home {
     acessarSignIn(){
-        cy.get(".login").click();
+        cy.get(el.login).click();
     }
 }
 

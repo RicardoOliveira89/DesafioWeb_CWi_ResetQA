@@ -1,74 +1,76 @@
+/// <reference types ="Cypress"/>
+
 const el = require("./elements").ELEMENTS;
 
 class Register {
     escolherTitulo(){
-        cy.get("#id_gender1").click();
+        cy.get(el.titulo).click();
     }
     inserirNome(){
-        cy.get("#customer_firstname").type("José");
+        cy.get(el.nome).type("José");
     }
     inserirSobrenome(){
-        cy.get("#customer_lastname").type("Railson");
+        cy.get(el.sobrenome).type("Railson");
     }
     inserirSenha(){
-        cy.get("#passwd").type("12345");
+        cy.get(el.senha).type("12345");
     }
     escolherDiaDeNascimento(){
-        cy.get("#days").select("26");
+        cy.get(el.diaNascimento).select("26");
     }
     escolherMesDeNascimento(){
-        cy.get("#months").select("November");
+        cy.get(el.mesNascimento).select("November");
     }
     escolherAnoDeNascimento(){
-        cy.get("#years").select("1966");
+        cy.get(el.anoNascimento).select("1966");
     }
     receberBoletimDeNoticias(){
-        cy.get("#newsletter").click();
+        cy.get(el.boletimNoticias).click();
     }
     receberOfertasEspeciais(){
-        cy.get("#optin").click();
+        cy.get(el.ofertasEspeciais).click();
     }
     reinserirNome(){
-        cy.get("#firstname").clear().type("José"); 
+        cy.get(el.primeiroNome).clear().type("José"); 
     }
     reinserirSobrenome(){
-        cy.get("#lastname").clear().type("Railson");
+        cy.get(el.segundoNome).clear().type("Railson");
     }
     inserirEmpresa(){
-        cy.get("#company").type("JRTur");
+        cy.get(el.nomeEmpresa).type("JRTur");
     }
     inserirEndereco(){
-        cy.get("#address1").type("Avenida João Pessoa, 2004");
+        cy.get(el.endereco).type("Avenida João Pessoa, 2004");
     }
     inserirComplementoEndereco(){
-        cy.get("#address2").type("Ap 402");
+        cy.get(el.complementoEndereco).type("Ap 402");
     }
     inserirCidade(){
-        cy.get("#city").type("Cajazeiras");
+        cy.get(el.cidade).type("Cajazeiras");
     }
     escolherEstado(){
-        cy.get("#id_state").select("California");
+        cy.get(el.estado).select("California");
     }
     inserirCep(){
-        cy.get("#postcode").type("11111");
+        cy.get(el.cep).type("11111");
     }
     escolherPais(){
-        cy.get("#id_country").select("United States");
+        cy.get(el.pais).select("United States");
     }
     inserirInformacoesAdicionais(){
-        cy.get("#other").type("Próximo ao Hospital Regional");
+        cy.get(el.informacoesAdicionais).type("Próximo ao Hospital Regional");
     }
     inserirTelefone(){
-        cy.get("#phone").type("8311111111");
+        cy.get(el.telefone).type("8311111111");
     }
     inserirCelular(){
-        cy.get("#phone_mobile").type("83922222222");
+        cy.get(el.celular).type("83922222222");
     }
     inserirEnderecoAlternativo(){
-        cy.get("#alias").clear().type("Rua José Américo, nº 1989");
+        cy.get(el.enderecoAlternativo).clear().type("Rua José Américo, nº 1989");
     }
     clicarNoBotaoRegister(){
-        cy.get("#submitAccount > span").click();
+        cy.get(el.botaoRegistrar).click();
     }
 }
 

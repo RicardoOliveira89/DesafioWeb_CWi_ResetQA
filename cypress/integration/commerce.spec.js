@@ -1,10 +1,11 @@
 /// <reference types ="Cypress"/>
 
-
-import homePage from "../support/pages/Home";
-import authenticationPage from "../support/pages/Authentication";
-import registerPage from "../support/pages/Register";
-import myAccountPage from "../support/pages/MyAccount";
+import { 
+  homePage,
+  authenticationPage,
+  registerPage,
+  myAccountPage 
+} from "../support/pages"
 
 describe("Fluxo de cadastro de usuário do ecommerce", () => {
     it("Acessar o site e realizar cadastro de usuário", () => {

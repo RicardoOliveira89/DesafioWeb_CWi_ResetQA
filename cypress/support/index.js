@@ -14,6 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+/// <reference types ="Cypress"/>
+
 import './commands'
 
 beforeEach(() => {
