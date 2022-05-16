@@ -11,9 +11,6 @@ describe("Fluxo de cadastro de usuário do ecommerce", () => {
     it("Acessar o site e realizar cadastro de usuário", () => {
       homePage.acessarSignIn();
       authenticationPage.inserirEmail();
-      //A cada teste rodado um novo email válido do usuário deverá ser inserido
-      //pois uma vez registrado, o email não poderá mais ser utilizado para um 
-      //novo cadastro.
       authenticationPage.clicarNoBotaoCreateAnAccount();
       registerPage.escolherTitulo();
       registerPage.inserirNome();
